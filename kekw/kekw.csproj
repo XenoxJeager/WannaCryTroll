@@ -260,6 +260,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="name.png" />
+    <None Include="Resources\Image1.png" />
+    <None Include="Resources\pictureBox1.Image.png" />
     <Content Include="WORDICON_0013.ico" />
   </ItemGroup>
   <ItemGroup>

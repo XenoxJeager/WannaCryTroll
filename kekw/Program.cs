@@ -14,9 +14,9 @@ namespace kekw
         [STAThread]
         static void Main()
         {
-            // ADD TO AUTOSTART
-            Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            key.SetValue("Windows Service Hub", @Application.ExecutablePath);
+            // ADD TO AUTOSTAR
+            //Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            //key.SetValue("Windows Service Hub", @Application.ExecutablePath);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

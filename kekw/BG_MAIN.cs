@@ -31,10 +31,6 @@ namespace kekw
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
-        [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
-        static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-        [DllImport("user32.dll", EntryPoint = "SendMessage", SetLastError = true)]
-        static extern IntPtr SendMessage(IntPtr hWnd, Int32 Msg, IntPtr wParam, IntPtr lParam);
 
         const int WM_COMMAND = 0x111;
         const int MIN_ALL = 419;
@@ -51,14 +47,9 @@ namespace kekw
                 onlyTwice();
             }
         }
-
+        
         private void BG_MAIN_Load(object sender, EventArgs e)
         {
-            Process.Start(@"C:\Windows\System32\taskkill.exe", @"/F /IM explorer.exe");
-            IntPtr lHwnd = FindWindow("Shell_TrayWnd", null);
-            SendMessage(lHwnd, WM_COMMAND, (IntPtr)MIN_ALL, IntPtr.Zero);
-            System.Threading.Thread.Sleep(2000);
-            SendMessage(lHwnd, WM_COMMAND, (IntPtr)MIN_ALL_UNDO, IntPtr.Zero);
             SetWindowPos(this.Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
             Form1 _f = new Form1();
             _f.ShowDialog();
