@@ -20,7 +20,7 @@ namespace kekw
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BG_MAIN());
+            Application.Run(new Form1());
         }
     }
 }

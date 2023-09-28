@@ -119,7 +119,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(538, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Send $200 worth of dogecoin to this address:";
+            this.label1.Text = "Send all the FLAGS to this address:";
             // 
             // groupBox2
             // 
@@ -167,13 +167,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 172);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;  // Add a border
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("name")));  // Assuming the image resource name is "pictureBox1.Image"
+            this.pictureBox1.Location = new System.Drawing.Point(41-30, 38-30);
+            this.pictureBox1.Name = "name";
+            this.pictureBox1.Size = new System.Drawing.Size(210+30, 202+30);  // Increased size
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("name")));
+            // this.pictureBox1.Location = new System.Drawing.Point(41, 38);
+            // this.pictureBox1.Name = "pictureBox1";
+            // this.pictureBox1.Size = new System.Drawing.Size(180+30, 172+30);
+            // this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            // this.pictureBox1.TabIndex = 4;
+            // this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -255,7 +263,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WannaTry(harder) 6.66";
+            this.Text = "XeniaCry 1337";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -268,6 +276,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

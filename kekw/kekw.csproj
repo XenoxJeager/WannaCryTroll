@@ -215,12 +215,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BG_MAIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BG_MAIN.Designer.cs">
-      <DependentUpon>BG_MAIN.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,9 +223,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BG_MAIN.resx">
-      <DependentUpon>BG_MAIN.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +235,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="name.png" />
     <None Include="kekw_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -260,8 +252,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="name.png" />
-    <None Include="Resources\Image1.png" />
     <None Include="Resources\pictureBox1.Image.png" />
     <Content Include="WORDICON_0013.ico" />
   </ItemGroup>
